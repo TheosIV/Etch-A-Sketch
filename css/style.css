@@ -44,13 +44,13 @@ main {
     width: 50rem;
     height: 50rem;
     background-color: #fff2e6;
+    border: 0.4rem solid #fff2e6;
+    border-radius: 0.8rem;
     box-shadow: 0px 0px 8px rgb(255, 64, 0);
 }
 
 .grid-column {
-    max-width: 25rem;
-    max-height: 25rem;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .controls-container {
@@ -76,13 +76,27 @@ main {
     cursor: pointer;
 }
 
+.active {
+    background-color: #fff2e6;
+    color: #020528;
+}
+
 #color-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    background-color: #fff2e6;
-    box-shadow: 0px 0px 5px rgb(255, 64, 0);
+    border: none;
+    background-color: transparent;
     cursor: pointer;
+}
+
+#color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 1px rgb(255, 64, 0);
 }
 
 #slider-title {

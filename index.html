@@ -13,15 +13,15 @@
         <h5 id="logo">Etch-A-Sketch</h5>
     </header>
     <main>
-        <div class="grid">
+        <div class="grid" id="grid">
 
         </div>
         <div class="controls-container">
-            <div id="color-picker"></div>
-            <button class="control-btn">Brush</button>
-            <button class="control-btn">RGB</button>
-            <button class="control-btn">Eraser</button>
-            <button class="control-btn">Clear</button>
+            <input type="color" id="color-picker" value="#fff2e6">
+            <button class="control-btn" id="brush">Brush</button>
+            <button class="control-btn" id="rgb">RGB</button>
+            <button class="control-btn" id="eraser">Eraser</button>
+            <button class="control-btn" id="clear">Clear</button>
             <div id="slider-container">
                 <h3 id="slider-title">16x16</h3>
                 <input type="range" min="2" max="100" value="16" id="slider">
